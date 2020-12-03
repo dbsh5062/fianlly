@@ -1,0 +1,84 @@
+a {text-decoration: none; color: #b4b4b5;}
+li{ display: inline; font-style: italic; font-size: 15px;}
+
+h1{
+        background-color: #00eaeb;
+        position: relative;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 50px;
+        color: white;
+}
+
+h2{
+  font-size: 17px;
+}
+
+.menu{
+  text-align: right;
+}
+
+.header {
+height: px;
+padding-top: 20px;
+text-align: center;
+}
+
+/* 네비게이션 바 */
+.navbar {
+  background-color: #bfaf96;
+ display: flex;
+ justify-content: center;
+border-bottom: 3px solid #333;
+font-weight: 600;
+}
+
+/* 네비게이션 바 가상선택자 */
+.navbar a {
+color: #333;
+padding: 30px;
+margin-top: 5px;
+text-decoration: none;
+text-align: center;
+font-size: 15px;
+
+}
+
+/* 커서 올려놨을때 색변화 */
+.navbar a:hover {
+background-color: #e2d5c5;
+color: #ee5977;
+}
+
+.map-image{
+text-align: center;
+}
+
+/*사진*/
+.main-container {
+margin: 0 auto;
+display: flex;
+flex-flow: row;
+justify-content: space-between;
+
+}
+
+.grid-container {
+height: 40%;
+width: 20%;
+margin: 10px 1em;
+padding-left: 10px;
+padding-right: 10px;
+justify-content: stretch;
+align-content: space-around;
+flex: 0 1;
+}
+
+
+.footer {
+height: 60;
+margin-top: 50px;
+text-align: center;
+background: #b4b4b5;
+color: white;
+}

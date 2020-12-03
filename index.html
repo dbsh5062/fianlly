@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 여행정보 웹사이트 </title>
+    <link rel="stylesheet" type="text/css" href="style3.css">
+    
+    <style>
+        a {text-decoration: none; color: #b4b4b5;}
+        li{ display: inline; font-style: italic; font-size: 15px;}
+
+        h1{
+                background-color: #00eaeb;
+                position: relative;
+                text-align: center;
+                font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+                font-size: 50px;
+                color: white;
+        }
+
+        h2{
+          font-size: 17px;
+        }
+
+        .menu{
+          text-align: right;
+        }
+
+        .header {
+        height: px;
+        padding-top: 20px;
+        text-align: center;
+        }
+
+        /* 네비게이션 바 */
+        .navbar {
+          background-color: #bfaf96;
+         display: flex;
+         justify-content: center;
+        border-bottom: 3px solid #333;
+        font-weight: 600;
+        }
+
+/* 네비게이션 바 가상선택자 */
+.navbar a {
+  color: #333;
+  padding: 30px;
+  margin-top: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 15px;
+  
+}
+
+/* 커서 올려놨을때 색변화 */
+.navbar a:hover {
+  background-color: #e2d5c5;
+  color: #ee5977;
+}
+
+.map-image{
+  text-align: center;
+}
+
+/*사진*/
+.main-container {
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  
+}
+
+.grid-container {
+  height: 40%;
+  width: 20%;
+  margin: 10px 1em;
+  padding-left: 10px;
+  padding-right: 10px;
+  justify-content: stretch;
+  align-content: space-around;
+}
+
+.footer {
+  height: 60;
+  margin-top: 50px;
+  text-align: center;
+  background: #b4b4b5;
+  color: white;
+}
+
+    </style>
+  </head>
+
+
+  <body>
+    <h1 id="title">  
+    <div class="menu">
+        <ul>
+            <li><a href="#login"> 로그인 | </a></li>
+            <li><a href="#singin"> 회원가입</a></li>
+        </ul>
+    </div>
+    
+    <header> <!---제목-->
+      <p>TRAVIT</p>
+      
+    </header>
+
+    <div class="wrapper">
+   
+      <div class="navbar">  <!--페이지 내 네비게이션 바-->
+      <br>
+       <a href="#restaurant">맛집</a>
+       <a href="#experience"> 체험 </a>
+       <a href="#place"> 명소 </a>
+       <a href="#photo"> 사진 스팟 </a>
+       <a href="#nature"> 자연 경관 </a>
+       <a href="#course"> 추천 코스 </a>
+       </div>
+
+       </h1>
+
+       <div class="map-image">
+        <p><image src="jeju.jpg" alt="제주도 지도 일러스트" class="img-fluid"></p>
+        </div>
+
+    <h2> 이번주 랭킹 FESTIVAL SHOW SHOW SHOW </h2>
+         <div class="main-container"> <!--섹션 3 -->
+              
+            <div class="grid-container">
+                  <a href="#"> 
+                    <image src="hub.jpg" alt="제주도 허브동산 별빛놀이" >
+                  </a>
+            <div class ="image-name"> 1위 제주도 허브동산 "별빛놀이"  </div>   
+                </div>              
+
+            <div class="grid-container">
+                <a href="#"> <image src="flower.jpg" alt="제주도 휴애리 동백축제" >
+                </a>
+              <div class="image-name"> 2위 제주도 휴애리 동백축제</div>
+              </div>
+
+            <div class="grid-container">
+                <a href="#"><image src="glass island.jpg" alt="유리의 섬 별빛축제">
+                </a>
+              <div class ="image-name">3위 제주도 유리의 섬 별빛축제 야간개장 </div>
+              </div>
+          
+        </div>
+
+        
+    <h2> 차박 캠핑하기 좋은 장소는? </h2>
+    <div class="main-container"> <!--섹션 3 -->
+         
+       <div class="grid-container">
+             <a href="#"> 
+               <image src="gimnyung.jpg" alt="김녕해수욕장" >
+             </a>  
+             <div class ="image-name"> 제주도 제주시 김녕해수욕장 </div>
+            </div>
+
+       <div class="grid-container">
+           <a href="#"> <image src="gumneung.jpg" alt="금능해수욕장" >
+           </a>   
+           <div class ="image-name"> 제주도 제주시 금능해수욕장  </div>
+           </div>
+
+       <div class="grid-container">
+           <a href="#"><image src="guangchigi.jpg" alt="광치기 해변">
+           </a>  
+           <div class ="image-name"> 제주도 서귀포시 광치기 해변  </div>
+           </div>
+     
+   </div>
+
+   
+   <h2> 기온은 떨어져도 여행 온도는 상승! 뜨거운 스파&온천 여행지 모음! </h2>
+   <div class="main-container"> <!--섹션 3 -->
+        
+      <div class="grid-container">
+            <a href="#"> 
+              <image src="mountain.jpg" alt="산방산 탄산온천" >
+            </a>  
+            <div class ="image-name"> 제주도 산방산 탄산온천 </div>
+            </div>
+
+      <div class="grid-container">
+          <a href="#"> <image src="aragonite.jpg" alt="아라고나이트 고온천" >
+          </a>   
+          <div class ="image-name"> 제주도 아라고나이트 고온천  </div>
+          </div>
+
+      <div class="grid-container">
+          <a href="#"><image src="smart.jpg" alt="스마트 풀빌라 펜션">
+          </a>  
+          <div class ="image-name"> 제주도 스마트 풀빌라 펜션  </div>
+          </div>
+    
+  </div>
+        
+      
+
+
+    <div class ="footer">  <!--푸터 -->
+        <P> &copy; 2020 유소현/yusosweet </P>
+        </div>
+
+    </body>
+    
+</html>
